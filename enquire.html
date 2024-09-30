@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="CleanSweep Cleaners - Enquiry Form" />
+    <title>Enquiry Form - CleanSweep Cleaners</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f8ff;
+        margin: 0;
+        padding: 0;
+      }
+
+      h3 {
+        text-align: center;
+        font-style: italic;
+        color: navy;
+        margin-top: 20px;
+      }
+
+      form {
+        max-width: 700px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      label {
+        font-weight: bold;
+        display: block;
+        margin-top: 10px;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      input[type="tel"],
+      input[type="date"],
+      input[type="file"],
+      textarea,
+      select {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+      }
+
+      input[type="checkbox"] {
+        margin-right: 10px;
+      }
+
+      input[type="radio"] {
+        margin-right: 10px;
+      }
+
+      input[type="submit"],
+      input[type="reset"] {
+        padding: 10px 20px;
+        background-color: navy;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-right: 10px;
+      }
+
+      input[type="submit"]:hover,
+      input[type="reset"]:hover {
+        background-color: goldenrod;
+      }
+
+      .form-group {
+        margin-bottom: 15px;
+      }
+
+      nav ul {
+        list-style-type: none;
+        text-align: center;
+        padding: 0;
+        margin-top: 30px;
+      }
+
+      nav ul li {
+        display: inline-block;
+        margin: 10px 15px;
+      }
+
+      nav ul li a {
+        font-size: 16px;
+        padding: 10px 20px;
+        background-color: navy;
+        color: white;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+      }
+
+      nav ul li a:hover {
+        background-color: goldenrod;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h3>BOOK WITH US!</h3>
+    <hr width="50%" color="black" />
+
+    <p style="text-align: center">
+      Fill out this form and we'll get our services to you, wherever and
+      whenever you need us.
+    </p>
+
+    <form action="#" method="POST">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter your full name"
+          required
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your email"
+          required
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Phone Number:</label>
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          placeholder="Enter your phone number"
+          required
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="address">Address:</label>
+        <input
+          type="text"
+          id="address"
+          name="address"
+          placeholder="Enter your address"
+          required
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="service-type">Select the Services Required:</label>
+        <input
+          type="checkbox"
+          name="service-type"
+          value="Residential Cleaning"
+        />
+        Residential Cleaning
+        <br />
+        <input type="checkbox" name="service-type" value="Corporate Cleaning" />
+        Corporate Cleaning
+        <br />
+        <input type="checkbox" name="service-type" value="Deep Cleaning" /> Deep
+        Cleaning
+        <br />
+        <input
+          type="checkbox"
+          name="service-type"
+          value="Cleaning Appliances"
+        />
+        Cleaning Appliances
+        <br />
+        <input
+          type="checkbox"
+          name="service-type"
+          value="Industrial Housekeeping"
+        />
+        Industrial Housekeeping Services
+        <br />
+        <input type="checkbox" name="service-type" value="Facade Cleaning" />
+        Facade Cleaning Services
+      </div>
+
+      <div class="form-group">
+        <label for="frequency">Preferred Cleaning Frequency:</label>
+        <input type="radio" id="once" name="frequency" value="Once" required />
+        Once
+        <br />
+        <input
+          type="radio"
+          id="weekly"
+          name="frequency"
+          value="Weekly"
+          required
+        />
+        Weekly
+        <br />
+        <input
+          type="radio"
+          id="monthly"
+          name="frequency"
+          value="Monthly"
+          required
+        />
+        Monthly
+      </div>
+
+      <div class="form-group">
+        <label for="comments">Additional Comments:</label>
+        <textarea
+          id="comments"
+          name="comments"
+          rows="6"
+          placeholder="Any specific requests or details"
+        ></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="date">Preferred Service Date:</label>
+        <input type="date" id="date" name="date" />
+      </div>
+
+      <div class="form-group">
+        <label for="file-upload">Upload Floor Plan (optional):</label>
+        <input type="file" id="file-upload" name="file-upload" />
+      </div>
+
+      <input type="submit" value="Submit Form" />
+      <input type="reset" value="Clear Form" />
+    </form>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="service.html">Our Services</a></li>
+        <li><a href="enquire.html">Enquiry Form</a></li>
+        <li><a href="about.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </body>
+</html>
